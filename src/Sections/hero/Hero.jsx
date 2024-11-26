@@ -4,8 +4,17 @@ import { hero_img } from "../../constants";
 import { useNavigate } from "react-router-dom";
 import "./hero.scss";
 import { LuArrowRight } from "react-icons/lu";
+import { useState } from "react";
+import SearchModal from "../../components/Search/SearchModal";
+import Nav from "../Navigation/Nav";
 
 const Hero = () => {
+  const [searchVisible, setSearchVisible] = useState(false);
+  const [navVisible, setNavVisible] = useState(false);
+  const handleSearchVisibility = () => {
+    setSearchVisible(!searchVisible);
+    console.log("searchVisible");
+  };
   const navigation = useNavigate();
   const viewCollection = () => {
     navigation("/about");
@@ -14,6 +23,12 @@ const Hero = () => {
     <div className="hero_bg">
       <Format>
         <div className="hero_wrapper">
+          {/* {<Nav toggleSearch={handleSearchVisibility} />} */}
+          {searchVisible && (
+            <div className="modal">
+              <SearchModal />{" "}
+            </div>
+          )}
           <div className="hero_message">
             <h1>Fresh Arrivals Online</h1>
             <p>Discover Our Newest Collection Today.</p>

@@ -7,14 +7,14 @@ import { useEffect, useState } from "react";
 import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
 import SearchModal from "../../components/Search/SearchModal";
 
-const Nav = () => {
+const Nav = ({ toggleSearch }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
 
-  const handleSearch = () => {
-    setIsSearchModalOpen((open) => !open);
-  };
+  // const handleSearch = () => {
+  //   setIsSearchModalOpen((open) => !open);
+  // };
 
   const handleScreenResize = () => {
     setIsMobile(window.innerWidth <= 768);
@@ -70,7 +70,7 @@ const Nav = () => {
               <img src={Shop} alt="shopping_cart" />
               <img src={User} alt="User_icon" />
               <LuSearch
-                onClick={handleSearch}
+                onClick={toggleSearch}
                 size={25}
                 className="search_modal"
               />
@@ -88,7 +88,7 @@ const Nav = () => {
                 />
               )}
             </div>
-            {isSearchModalOpen && <SearchModal />}
+            {/* {isSearchModalOpen && <SearchModal />} */}
           </div>
         ) : (
           // Desktop
@@ -116,11 +116,8 @@ const Nav = () => {
               })}
             </div>
             <div className="user_interact">
-              <div className="search_wrapper">
-                <img src={Search} alt="" />
-                <input type="text" placeholder="Search products" />
-              </div>
-              <img src={Shop} alt="shopping_cart" />
+              <SearchModal />
+              <img src={Shop} alt="shopping_cart" onClick="" />
               <img src={User} alt="User_icon" />
             </div>
           </div>
