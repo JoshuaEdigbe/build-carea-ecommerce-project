@@ -19,6 +19,9 @@ import cozyblack from "../assets/ProductList/cozyblack.png";
 import rawblack from "../assets/ProductList/rawblack.png";
 import mockup from "../assets/ProductList/mockup.png";
 
+import success from "../assets/Payment/success.png";
+import error from "../assets/Payment/error.png";
+
 import f_logo from "../assets/Footer/f_logo.png";
 import github from "../assets/Footer/github.png";
 import youtube from "../assets/Footer/utube.png";
@@ -47,6 +50,8 @@ export {
   master,
   amc,
   visa,
+  success,
+  error,
 };
 
 export const menus = [
