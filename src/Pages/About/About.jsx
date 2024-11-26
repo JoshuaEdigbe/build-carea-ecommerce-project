@@ -1,10 +1,12 @@
 import React from "react";
 import Format from "../../components/Format/Format";
+import PaymentSuccess from "../Afterpayment/PaymentSuccess";
 
 const About = () => {
   return (
     <div>
-      <Format>About</Format>
+      {/* <PaymentSuccess /> */}
+      <Format></Format>
     </div>
   );
 };

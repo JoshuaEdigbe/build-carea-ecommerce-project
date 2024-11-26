@@ -1,16 +1,15 @@
 import "./BreadCrumb.scss";
-import Format from "../Format/Format";
 
 const BreadCrumb = () => {
   return (
-    <Format>
+    <>
       <div className="breadcrumb">
         <div className="breadcrumb_item">
-          <a href="/">Home</a>
+          <a href="/">Ecommerce</a>
           <span>&gt;</span>
         </div>
       </div>
-    </Format>
+    </>
   );
 };
 
