@@ -1,0 +1,79 @@
+.auth{
+    height: 100vh;
+    width: 100%;
+    box-shadow: 10 10 60 60 rgba(0, 0, 0, 0.1);
+    .bread_crumb_wrapper_success{
+        display: flex;
+        flex-direction: column;
+        background: #f6f6f6;
+        height: 100px;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        .bread_crumb_items{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+      
+    }
+    .auth_input_wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 30%;
+        margin: 128px auto;
+        // border: 1px solid #e0e0e0;
+        .google_auth{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            width: 320px;
+            height: 40px;
+            .google_icon{
+                width: 30px;
+                height: 30px;
+            }
+            .google_text{
+                font-size: 14px;
+                font-weight: 500;
+                color: #717171;
+            }
+            
+        }
+        // .line{
+           
+        // }
+       
+        .btn_auth{
+            background: #000;
+            width:320px;
+            padding: 12px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .forgot_password{
+            display: flex;
+            justify-content: stretch;
+            font-size: 14px;
+            color: #717171;
+        }
+
+        .signup_link{
+            display: flex;
+            justify-content: center;
+            font-size: 14px;
+           color: #5C5F6A;
+           a{
+            color: #5C5F6A;
+            margin-left: 5px;
+           }
+        }
+        
+       
+    }
+}

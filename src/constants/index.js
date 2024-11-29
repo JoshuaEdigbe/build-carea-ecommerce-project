@@ -30,6 +30,8 @@ import master from "../assets/Footer/masterCard.png";
 import amc from "../assets/Footer/amc.png";
 import visa from "../assets/Footer/visa.png";
 
+import googleauth from "../assets/icons/Google.png";
+
 export {
   logo,
   arrow_down,
@@ -52,6 +54,7 @@ export {
   visa,
   success,
   error,
+  googleauth,
 };
 
 export const menus = [

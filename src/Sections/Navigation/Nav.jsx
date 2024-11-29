@@ -6,15 +6,17 @@ import { menus } from "../../constants";
 import { useEffect, useState } from "react";
 import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
 import SearchModal from "../../components/Search/SearchModal";
+import Login from "../../Pages/Auth/Login/Login";
 
 const Nav = ({ toggleSearch }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [LoginModal, setLoginModal] = useState(false);
 
-  // const handleSearch = () => {
-  //   setIsSearchModalOpen((open) => !open);
-  // };
+  const handleLogin = () => {
+    setLoginModal(true);
+  };
 
   const handleScreenResize = () => {
     setIsMobile(window.innerWidth <= 768);
@@ -118,7 +120,9 @@ const Nav = ({ toggleSearch }) => {
             <div className="user_interact">
               <SearchModal />
               <img src={Shop} alt="shopping_cart" onClick="" />
-              <img src={User} alt="User_icon" />
+              <Link to="/login">
+                <img src={User} alt="User_icon" />
+              </Link>
             </div>
           </div>
         )}

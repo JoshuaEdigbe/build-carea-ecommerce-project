@@ -6,6 +6,7 @@ const About = () => {
   return (
     <div>
       {/* <PaymentSuccess /> */}
+
       <Format></Format>
     </div>
   );
