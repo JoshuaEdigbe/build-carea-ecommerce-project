@@ -1,7 +1,11 @@
-import React from "react";
+import Format from "../../components/Format/Format";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <Format>Contact</Format>
+    </div>
+  );
 };
 
 export default Contact;

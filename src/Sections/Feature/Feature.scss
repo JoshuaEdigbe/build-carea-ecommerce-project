@@ -9,9 +9,7 @@
         flex-direction: column;
         align-items: center;
 
-        // h3, p{
-        //     text-align: center;
-        // }
+       
         h3{
             font-size: 16px;
             line-height: 24px;
@@ -42,7 +40,8 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 64px;
         .feature{
-        width: 328px;
+        width: 300px;
+        border: 1px solid gainsboro;
         height: 218px;
         display: flex;
         gap: 24px;
