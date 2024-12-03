@@ -1,4 +1,3 @@
-import React from "react";
 import { LuArrowRight } from "react-icons/lu";
 
 export const Button = ({
@@ -15,7 +14,7 @@ export const Button = ({
       onClick={onClick}
       className={`button ${className}`}
       disabled={disabled}
-      icon={icon ? icon : null}
+      icon={icon ? <LuArrowRight color="white" /> : null}
     >
       {label}
     </button>

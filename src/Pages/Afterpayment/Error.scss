@@ -1,0 +1,47 @@
+.payment{
+    height: 100vh;
+    width: 100%;
+    .bread_crumb_wrapper{
+        display: flex;
+        flex-direction: column;
+        background: #FBD9D0; 
+        height: 160px;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        .bread_crumb_items{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+      
+    }
+    .payment_icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin: 5% auto;
+        
+        .payment_text{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+            p{
+              color:#5C5F6A;
+            }
+            .payment_btn{
+                padding: 10px 20px;
+                background: #000;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

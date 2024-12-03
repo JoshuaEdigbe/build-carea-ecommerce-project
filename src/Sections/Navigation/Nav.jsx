@@ -6,14 +6,16 @@ import { menus } from "../../constants";
 import { useEffect, useState } from "react";
 import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
 import SearchModal from "../../components/Search/SearchModal";
+import Login from "../../Pages/Auth/Login/Login";
 
-const Nav = () => {
+const Nav = ({ toggleSearch }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [LoginModal, setLoginModal] = useState(false);
 
-  const handleSearch = () => {
-    setIsSearchModalOpen((open) => !open);
+  const handleLogin = () => {
+    setLoginModal(true);
   };
 
   const handleScreenResize = () => {
@@ -70,7 +72,7 @@ const Nav = () => {
               <img src={Shop} alt="shopping_cart" />
               <img src={User} alt="User_icon" />
               <LuSearch
-                onClick={handleSearch}
+                onClick={toggleSearch}
                 size={25}
                 className="search_modal"
               />
@@ -88,7 +90,7 @@ const Nav = () => {
                 />
               )}
             </div>
-            {isSearchModalOpen && <SearchModal />}
+            {/* {isSearchModalOpen && <SearchModal />} */}
           </div>
         ) : (
           // Desktop
@@ -116,12 +118,11 @@ const Nav = () => {
               })}
             </div>
             <div className="user_interact">
-              <div className="search_wrapper">
-                <img src={Search} alt="" />
-                <input type="text" placeholder="Search products" />
-              </div>
-              <img src={Shop} alt="shopping_cart" />
-              <img src={User} alt="User_icon" />
+              <SearchModal />
+              <img src={Shop} alt="shopping_cart" onClick="" />
+              <Link to="/login">
+                <img src={User} alt="User_icon" />
+              </Link>
             </div>
           </div>
         )}
