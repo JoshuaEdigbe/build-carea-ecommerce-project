@@ -1,0 +1,38 @@
+#colors-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  h2 {
+    color: #0e1422;
+    font-size: 14px;
+  }
+
+  .colors {
+    display: flex;
+    gap: 10px;
+
+    .semantic-blue,
+    .semantic-yellow,
+    .semantic-green,
+    .primary-blue {
+      width: 18px;
+      height: 18px;
+      border-radius: 100px;
+      background: #a3bef8;
+
+      &:hover {
+        border: 1px solid red;
+      }
+    }
+    .semantic-yellow {
+      background: #ffd58a;
+    }
+    .semantic-green {
+      background: #83b18b;
+    }
+    .primary-blue {
+      background: #4078ff;
+    }
+  }
+}

@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */
+          <Route path="/contact" element={<Contact />} />
           <Route path="/categories" element={<Categories />} />
         </Routes>
         <Footer />
