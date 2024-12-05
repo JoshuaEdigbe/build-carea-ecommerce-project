@@ -8,6 +8,7 @@ import Footer from "./Sections/Footer/Footer";
 import Hero from "./Sections/hero/Hero";
 import Layout from "./Sections/Layout";
 import Nav from "./Sections/Navigation/Nav";
+import ProductDetail from "./components/ProductDetail/ProductDetail";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/categories" element={<Categories />} />
+          <Route path="/product" element={<ProductDetail />} />
         </Routes>
         <Footer />
       </Router>

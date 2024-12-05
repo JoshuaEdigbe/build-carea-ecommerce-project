@@ -83,12 +83,13 @@ import { IoCloseOutline } from "react-icons/io5";
 import { IoIosArrowDown, IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Sidebar from "../Sidebar/Sidebar";
 import Card from "../../../components/Card/Card";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { GlobalContext } from "../../../context/GlobalContext";
 
 function Products() {
   const { products } = useContext(GlobalContext);
   const [currentPage, setCurrentPage] = useState(0);
+  const navigate = useNavigate();
   const itemsPerPage = 9;
 
   const totalPages = Math.ceil(products.length / itemsPerPage);
@@ -112,6 +113,10 @@ function Products() {
   const handleLastPage = () => {
     setCurrentPage(totalPages - 1);
   };
+
+  const handleGoProduct = (id) => {
+    navigate(`/product/${id}`)
+  }
 
   return (
     <div id="product-wrapper">
@@ -144,14 +149,14 @@ function Products() {
             .sort(() => Math.random() - 0.5)
             .slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
             .map((product, index) => (
-              <Link to="" key={index} className="dynamic-link">
+              <div onClick={() => handleGoProduct(product.id)} key={index} className="dynamic-link">
                 <Card
                   img={product.img}
                   availability={product.availability}
                   name={product.name}
                   price={product.price}
                 />
-              </Link>
+              </div>
             ))}
         </div>
         <div className="pagination">

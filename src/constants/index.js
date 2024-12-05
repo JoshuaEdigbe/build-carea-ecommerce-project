@@ -670,7 +670,7 @@ export const allProducts = [
       "A durable stainless steel thermos designed for everyday use. Perfect for keeping beverages hot for up to 12 hours or cold for up to 24 hours. Its sleek design and sturdy construction make it an ideal companion for work, travel, or outdoor adventures.",
     category: "thermos",
     img: thermo_1,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -686,7 +686,7 @@ export const allProducts = [
       "Compact and lightweight, this travel thermos is your perfect companion for trips and commutes. It features a secure, leak-proof lid and double-wall insulation to ensure your drink stays at the perfect temperature for hours.",
     category: "thermos",
     img: thermo_2,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -702,7 +702,7 @@ export const allProducts = [
       "This insulated coffee mug combines style and functionality, keeping your coffee hot and flavorful throughout the day. Its ergonomic handle and spill-proof lid make it ideal for office use or morning commutes.",
     category: "thermos",
     img: thermo_3,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -718,7 +718,7 @@ export const allProducts = [
       "Designed for families or group outings, this large-capacity thermos can hold up to 2 liters of liquid. It features a wide-mouth design for easy pouring and cleaning, along with superior insulation to keep beverages fresh for hours.",
     category: "thermos",
     img: thermo_4,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -731,10 +731,10 @@ export const allProducts = [
     price: "$15.75",
     availability: "In Stock",
     details:
-      "Specially designed for children, this kids' thermos bottle is both fun and functional. With vibrant colors and playful patterns, it encourages hydration while keeping drinks at the desired temperature. The lightweight design makes it easy for kids to carry.",
+      "Specially designed for children, this kids' thermos bottle is both fun and functional. With vibrant color and playful patterns, it encourages hydration while keeping drinks at the desired temperature. The lightweight design makes it easy for kids to carry.",
     category: "thermos",
     img: thermo_5,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -750,7 +750,7 @@ export const allProducts = [
       "Made from sustainable and eco-friendly materials, this thermos is perfect for those who care about the environment. Its stylish design and efficient insulation make it a great choice for work, travel, or everyday use.",
     category: "thermos",
     img: thermo_6,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -766,7 +766,7 @@ export const allProducts = [
       "Designed for active individuals, this sport thermos bottle features a secure grip and a sports lid for quick access during workouts. Its robust design ensures durability, while the insulation keeps your drinks cool even during intense activities.",
     category: "thermos",
     img: thermo_7,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -782,7 +782,7 @@ export const allProducts = [
       "This luxury thermos combines premium materials and elegant design for a truly sophisticated experience. It features excellent insulation to maintain the temperature of your beverages while adding a touch of class to your routine.",
     category: "thermos",
     img: thermo_8,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -798,7 +798,7 @@ export const allProducts = [
       "Crafted from high-quality borosilicate glass, this thermos bottle offers a sleek and modern look. The protective silicone sleeve ensures durability, while the thermal insulation keeps your beverages at the perfect temperature.",
     category: "thermos",
     img: thermo_9,
-    colors: [
+    color: [
       "semantic-green",
       "semantic-blue",
       "semantic-yellow",
@@ -814,7 +814,7 @@ export const allProducts = [
       "These slim-fit chinos offer a modern, sleek look. Made from soft cotton with a hint of stretch, they're perfect for both casual and semi-formal occasions.",
     category: "trousers",
     img: trouser_1,
-    colors: ["charcoal", "navy", "khaki", "black"],
+    color: ["charcoal", "navy", "khaki", "black"],
   },
   {
     id: 38,
@@ -825,7 +825,7 @@ export const allProducts = [
       "These timeless denim jeans offer a comfortable fit with a classic five-pocket design. Made from durable cotton, they are the perfect addition to any casual wardrobe.",
     category: "trousers",
     img: trouser_2,
-    colors: ["light-blue", "dark-blue", "black"],
+    color: ["light-blue", "dark-blue", "black"],
   },
   {
     id: 39,
@@ -836,7 +836,7 @@ export const allProducts = [
       "Durable cargo pants designed for hard work. Featuring multiple pockets and reinforced stitching, these pants are made to withstand tough conditions while offering comfort and flexibility.",
     category: "trousers",
     img: trouser_3,
-    colors: ["olive", "black", "gray"],
+    color: ["olive", "black", "gray"],
   },
   {
     id: 40,
@@ -847,7 +847,7 @@ export const allProducts = [
       "Lightweight and breathable linen trousers, ideal for hot weather. With a relaxed fit and soft texture, these trousers offer both comfort and style during the summer months.",
     category: "trousers",
     img: trouser_4,
-    colors: ["white", "beige", "light-gray"],
+    color: ["white", "beige", "light-gray"],
   },
   {
     id: 41,
@@ -858,7 +858,7 @@ export const allProducts = [
       "These athletic fit joggers are designed for active individuals. Made from a soft cotton blend, they feature an elastic waistband and cuffs for a secure and comfortable fit.",
     category: "trousers",
     img: trouser_5,
-    colors: ["black", "dark-gray", "navy"],
+    color: ["black", "dark-gray", "navy"],
   },
   {
     id: 42,
@@ -869,7 +869,7 @@ export const allProducts = [
       "These elegant pleated dress trousers offer a sophisticated and tailored look. Perfect for formal occasions, they are made from premium wool fabric for a comfortable yet refined feel.",
     category: "trousers",
     img: trouser_6,
-    colors: ["black", "charcoal", "navy"],
+    color: ["black", "charcoal", "navy"],
   },
   {
     id: 43,
@@ -880,7 +880,7 @@ export const allProducts = [
       "Stay comfortable in these relaxed-fit sweatpants. Made from a soft cotton blend, they feature a drawstring waistband and ribbed cuffs for a relaxed yet stylish fit.",
     category: "trousers",
     img: trouser_7,
-    colors: ["gray", "navy", "black"],
+    color: ["gray", "navy", "black"],
   },
   {
     id: 44,
@@ -891,7 +891,7 @@ export const allProducts = [
       "These high-waisted trousers are designed to flatter your figure. Made from a lightweight fabric, they offer a smart and chic look for both casual and professional settings.",
     category: "trousers",
     img: trouser_8,
-    colors: ["black", "beige", "dark-green"],
+    color: ["black", "beige", "dark-green"],
   },
   {
     id: 45,
@@ -902,7 +902,7 @@ export const allProducts = [
       "These stretch fit work trousers offer flexibility and comfort for long hours. Featuring a water-resistant finish and a sleek design, they're perfect for both work and leisure.",
     category: "trousers",
     img: trouser_9,
-    colors: ["black", "gray", "navy"],
+    color: ["black", "gray", "navy"],
   },
   {
     id: 46,
@@ -913,7 +913,7 @@ export const allProducts = [
       "Tailored for a sharp look, these slim fit formal trousers are ideal for office wear. Made from premium wool fabric, they offer comfort and breathability throughout the day.",
     category: "trousers",
     img: trouser_10,
-    colors: ["charcoal", "navy", "gray"],
+    color: ["charcoal", "navy", "gray"],
   },
   {
     id: 47,
@@ -924,7 +924,7 @@ export const allProducts = [
       "These tapered-leg chinos combine style and comfort. With a slim fit and a modern finish, they are versatile enough to wear at both work and casual gatherings.",
     category: "trousers",
     img: trouser_11,
-    colors: ["navy", "beige", "black"],
+    color: ["navy", "beige", "black"],
   },
   {
     id: 48,
@@ -935,7 +935,7 @@ export const allProducts = [
       "These slim-fit black trousers offer a sleek and minimalist design. Made from high-quality cotton with a slight stretch, they provide both style and comfort for all-day wear.",
     category: "trousers",
     img: trouser_12,
-    colors: ["black", "dark-gray", "charcoal"],
+    color: ["black", "dark-gray", "charcoal"],
   },
   {
     id: 49,
@@ -946,7 +946,7 @@ export const allProducts = [
       "Cozy up in these fleece-lined sweatpants, perfect for cold weather. Made with a soft interior lining, these sweatpants offer warmth and comfort without compromising on style.",
     category: "trousers",
     img: trouser_13,
-    colors: ["gray", "black", "olive"],
+    color: ["gray", "black", "olive"],
   },
   {
     id: 50,
@@ -957,7 +957,7 @@ export const allProducts = [
       "These bootcut jeans provide a comfortable and flattering fit. Featuring a classic bootcut silhouette, they offer a balance of comfort and style, ideal for casual wear.",
     category: "trousers",
     img: trouser_14,
-    colors: ["blue", "black", "dark-wash"],
+    color: ["blue", "black", "dark-wash"],
   },
   {
     id: 51,
@@ -968,7 +968,7 @@ export const allProducts = [
       "These drawstring joggers are the perfect blend of style and comfort. Made from a soft cotton blend, they feature an adjustable waistband and a tapered fit for a sleek look.",
     category: "trousers",
     img: trouser_15,
-    colors: ["gray", "navy", "black"],
+    color: ["gray", "navy", "black"],
   },
   {
     id: 52,
@@ -979,8 +979,8 @@ export const allProducts = [
       "Designed for comfort and speed, these running shoes offer excellent cushioning and support for your daily workouts. The breathable mesh upper helps keep your feet cool while the rubber outsole provides excellent grip.",
     category: "shoe",
     img: shoe_1,
-    colors: ["semantic-blue", "semantic-green", "primary-blue"],
-    sizes: ["M", "L", "XL"],
+    color: ["semantic-blue", "semantic-green", "primary-blue"],
+    size: ["M", "L", "XL"],
   },
   {
     id: 53,
@@ -991,8 +991,8 @@ export const allProducts = [
       "These stylish leather boots are perfect for colder weather. Made from premium leather, they offer durability and comfort, with a sleek design suitable for both casual and semi-formal occasions.",
     category: "shoe",
     img: shoe_2,
-    colors: ["semantic-green", "primary-blue"],
-    sizes: ["L", "XL"],
+    color: ["semantic-green", "primary-blue"],
+    size: ["L", "XL"],
   },
   {
     id: 54,
@@ -1003,8 +1003,8 @@ export const allProducts = [
       "These casual sneakers are a perfect blend of comfort and style. Featuring a lightweight construction and padded insole, they are perfect for everyday wear.",
     category: "shoe",
     img: shoe_3,
-    colors: ["semantic-yellow", "primary-blue", "semantic-green"],
-    sizes: ["S", "M", "L"],
+    color: ["semantic-yellow", "primary-blue", "semantic-green"],
+    size: ["S", "M", "L"],
   },
   {
     id: 55,
@@ -1015,8 +1015,8 @@ export const allProducts = [
       "These slip-on loafers offer a comfortable and sophisticated look. Made with soft suede and designed for easy wear, they are a great addition to both casual and semi-formal outfits.",
     category: "shoe",
     img: shoe_4,
-    colors: ["semantic-blue", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 56,
@@ -1027,8 +1027,8 @@ export const allProducts = [
       "These rugged work boots provide excellent protection and support for long hours. Made from durable leather and equipped with a steel toe cap, they are designed to handle tough conditions while keeping your feet comfortable.",
     category: "shoe",
     img: shoe_5,
-    colors: ["semantic-green", "primary-blue"],
-    sizes: ["L", "XL", "XXL"],
+    color: ["semantic-green", "primary-blue"],
+    size: ["L", "XL", "XXL"],
   },
   {
     id: 57,
@@ -1039,8 +1039,8 @@ export const allProducts = [
       "These high-top sneakers offer a trendy design with added ankle support. Featuring a canvas upper and cushioned insole, they are perfect for streetwear and casual outings.",
     category: "shoe",
     img: shoe_6,
-    colors: ["semantic-blue", "primary-blue", "semantic-green"],
-    sizes: ["S", "M", "L"],
+    color: ["semantic-blue", "primary-blue", "semantic-green"],
+    size: ["S", "M", "L"],
   },
   {
     id: 58,
@@ -1051,8 +1051,8 @@ export const allProducts = [
       "These classic Chelsea boots offer timeless style and easy wear. With an elastic side panel and soft leather construction, they are perfect for both formal and casual occasions.",
     category: "shoe",
     img: shoe_7,
-    colors: ["semantic-yellow", "primary-blue"],
-    sizes: ["M", "L", "XL"],
+    color: ["semantic-yellow", "primary-blue"],
+    size: ["M", "L", "XL"],
   },
   {
     id: 59,
@@ -1063,8 +1063,8 @@ export const allProducts = [
       "These lightweight espadrilles are perfect for warm weather. Made from canvas and jute, they offer a stylish yet comfortable option for beach trips or casual outings.",
     category: "shoe",
     img: shoe_8,
-    colors: ["semantic-green", "semantic-yellow"],
-    sizes: ["S", "M"],
+    color: ["semantic-green", "semantic-yellow"],
+    size: ["S", "M"],
   },
   {
     id: 60,
@@ -1075,8 +1075,8 @@ export const allProducts = [
       "These hiking shoes are designed to provide maximum comfort and support during outdoor adventures. Featuring a rugged outsole and breathable upper, they are perfect for long treks on various terrains.",
     category: "shoe",
     img: shoe_9,
-    colors: ["semantic-blue", "semantic-green", "primary-blue"],
-    sizes: ["M", "L", "XL"],
+    color: ["semantic-blue", "semantic-green", "primary-blue"],
+    size: ["M", "L", "XL"],
   },
   {
     id: 61,
@@ -1087,8 +1087,8 @@ export const allProducts = [
       "These comfortable flip flops are ideal for beach trips or casual outings. With a soft footbed and durable straps, they offer all-day comfort and easy wear.",
     category: "shoe",
     img: shoe_10,
-    colors: ["semantic-yellow", "semantic-blue", "primary-blue"],
-    sizes: ["S", "M"],
+    color: ["semantic-yellow", "semantic-blue", "primary-blue"],
+    size: ["S", "M"],
   },
   {
     id: 62,
@@ -1099,8 +1099,8 @@ export const allProducts = [
       "These elegant dress shoes are perfect for formal occasions. Made from polished leather and featuring a sleek design, they provide both style and comfort for a day at the office or a special event.",
     category: "shoe",
     img: shoe_11,
-    colors: ["semantic-blue", "semantic-green"],
-    sizes: ["L", "XL"],
+    color: ["semantic-blue", "semantic-green"],
+    size: ["L", "XL"],
   },
   {
     id: 63,
@@ -1111,8 +1111,8 @@ export const allProducts = [
       "These high-performance basketball shoes are designed to offer superior grip, ankle support, and comfort during intense games. With a lightweight yet durable build, they're perfect for athletes.",
     category: "shoe",
     img: shoe_12,
-    colors: ["semantic-yellow", "primary-blue", "semantic-green"],
-    sizes: ["M", "L"],
+    color: ["semantic-yellow", "primary-blue", "semantic-green"],
+    size: ["M", "L"],
   },
   {
     id: 64,
@@ -1123,8 +1123,8 @@ export const allProducts = [
       "These tennis shoes are made to offer great stability and comfort on the court. With a cushioned insole and a durable outsole, they are perfect for high-impact activities.",
     category: "shoe",
     img: shoe_13,
-    colors: ["semantic-blue", "semantic-yellow", "primary-blue"],
-    sizes: ["S", "M", "L"],
+    color: ["semantic-blue", "semantic-yellow", "primary-blue"],
+    size: ["S", "M", "L"],
   },
   {
     id: 65,
@@ -1135,8 +1135,8 @@ export const allProducts = [
       "These stylish sandals offer comfort and breathability for the warmer months. With adjustable straps and a soft footbed, they provide the perfect fit and comfort for casual wear.",
     category: "shoe",
     img: shoe_14,
-    colors: ["semantic-green", "primary-blue", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["semantic-green", "primary-blue", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 66,
@@ -1147,8 +1147,8 @@ export const allProducts = [
       "These moccasin shoes combine comfort and classic style. With a soft suede finish and a padded insole, they are perfect for both casual and semi-formal settings.",
     category: "shoe",
     img: shoe_15,
-    colors: ["semantic-blue", "semantic-green", "primary-blue"],
-    sizes: ["M", "L", "XL"],
+    color: ["semantic-blue", "semantic-green", "primary-blue"],
+    size: ["M", "L", "XL"],
   },
   {
     id: 67,
@@ -1159,8 +1159,8 @@ export const allProducts = [
       "This classic baseball cap is perfect for sunny days. Made from durable cotton with a breathable mesh back, it offers comfort and style while protecting you from the sun.",
     category: "hat",
     img: hat_1,
-    colors: ["semantic-blue", "primary-blue", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "primary-blue", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 68,
@@ -1171,8 +1171,8 @@ export const allProducts = [
       "This elegant fedora hat offers a sophisticated look. Made from premium wool and designed with a wide brim, it is perfect for both casual and formal events.",
     category: "hat",
     img: hat_2,
-    colors: ["semantic-green", "semantic-blue"],
-    sizes: ["M", "L", "XL"],
+    color: ["semantic-green", "semantic-blue"],
+    size: ["M", "L", "XL"],
   },
   {
     id: 69,
@@ -1183,8 +1183,8 @@ export const allProducts = [
       "This wide-brimmed sun hat is perfect for protecting your face from the sun. Made with lightweight fabric, it is comfortable and breathable for outdoor activities.",
     category: "hat",
     img: hat_3,
-    colors: ["semantic-yellow", "semantic-green"],
-    sizes: ["S", "M"],
+    color: ["semantic-yellow", "semantic-green"],
+    size: ["S", "M"],
   },
   {
     id: 70,
@@ -1195,8 +1195,8 @@ export const allProducts = [
       "This cozy beanie hat is perfect for cold weather. Made from soft knitted fabric, it provides warmth and comfort while keeping you stylish.",
     category: "hat",
     img: hat_4,
-    colors: ["semantic-blue", "semantic-green"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "semantic-green"],
+    size: ["M", "L"],
   },
   {
     id: 71,
@@ -1207,8 +1207,8 @@ export const allProducts = [
       "This trendy bucket hat is perfect for a casual day out. Made from durable cotton, it provides shade and comfort while offering a laid-back style.",
     category: "hat",
     img: hat_5,
-    colors: ["semantic-yellow", "primary-blue"],
-    sizes: ["S", "M", "L"],
+    color: ["semantic-yellow", "primary-blue"],
+    size: ["S", "M", "L"],
   },
   {
     id: 72,
@@ -1219,8 +1219,8 @@ export const allProducts = [
       "This retro-inspired trucker hat features a mesh back and a comfortable fit. Perfect for a casual day outdoors or for adding a vintage touch to your look.",
     category: "hat",
     img: hat_6,
-    colors: ["semantic-blue", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 73,
@@ -1231,8 +1231,8 @@ export const allProducts = [
       "This stylish Panama hat is made from lightweight straw, offering a cool and breathable design for hot weather. Perfect for both formal and casual occasions.",
     category: "hat",
     img: hat_7,
-    colors: ["semantic-green", "primary-blue"],
-    sizes: ["M", "L"],
+    color: ["semantic-green", "primary-blue"],
+    size: ["M", "L"],
   },
   {
     id: 74,
@@ -1243,8 +1243,8 @@ export const allProducts = [
       "This practical visor hat provides excellent sun protection while keeping your head cool. With an adjustable strap, it ensures a comfortable fit.",
     category: "hat",
     img: hat_8,
-    colors: ["semantic-yellow", "semantic-blue"],
-    sizes: ["S", "M"],
+    color: ["semantic-yellow", "semantic-blue"],
+    size: ["S", "M"],
   },
   {
     id: 75,
@@ -1255,8 +1255,8 @@ export const allProducts = [
       "This classic cowboy hat is made from durable felt and features a wide brim for maximum sun protection. Perfect for outdoor events and western-themed attire.",
     category: "hat",
     img: hat_9,
-    colors: ["primary-blue", "semantic-green"],
-    sizes: ["M", "L", "XL"],
+    color: ["primary-blue", "semantic-green"],
+    size: ["M", "L", "XL"],
   },
   {
     id: 76,
@@ -1267,8 +1267,8 @@ export const allProducts = [
       "This fashionable newsboy cap offers a vintage-inspired look. Made from soft wool, it is perfect for adding a touch of class to your everyday style.",
     category: "hat",
     img: hat_10,
-    colors: ["semantic-blue", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 77,
@@ -1279,8 +1279,8 @@ export const allProducts = [
       "This spacious leather tote bag is perfect for everyday use. With durable stitching and ample space for all your essentials, it's both practical and stylish.",
     category: "handbag",
     img: handbag_1,
-    colors: ["semantic-blue", "semantic-green"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "semantic-green"],
+    size: ["M", "L"],
   },
   {
     id: 78,
@@ -1291,8 +1291,8 @@ export const allProducts = [
       "This sleek crossbody bag offers a hands-free carrying option. Made from soft faux leather, it has enough room for your phone, wallet, and other small essentials.",
     category: "handbag",
     img: handbag_2,
-    colors: ["semantic-yellow", "primary-blue"],
-    sizes: ["S", "M"],
+    color: ["semantic-yellow", "primary-blue"],
+    size: ["S", "M"],
   },
   {
     id: 79,
@@ -1303,8 +1303,8 @@ export const allProducts = [
       "This stylish satchel bag comes with a top handle and a detachable strap for versatile carrying. Made from high-quality leather, it is both functional and fashionable.",
     category: "handbag",
     img: handbag_3,
-    colors: ["semantic-green", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["semantic-green", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 80,
@@ -1315,8 +1315,8 @@ export const allProducts = [
       "This elegant clutch bag is perfect for formal events. With a sleek design and magnetic closure, it offers just enough space for your essentials like a phone and lipstick.",
     category: "handbag",
     img: handbag_4,
-    colors: ["primary-blue", "semantic-yellow"],
-    sizes: ["S"],
+    color: ["primary-blue", "semantic-yellow"],
+    size: ["S"],
   },
   {
     id: 81,
@@ -1327,8 +1327,8 @@ export const allProducts = [
       "This oversized hobo bag is both stylish and practical. Made from soft leather, it offers plenty of space and features a slouchy design for a relaxed, bohemian vibe.",
     category: "handbag",
     img: handbag_5,
-    colors: ["semantic-blue", "semantic-green"],
-    sizes: ["M", "L"],
+    color: ["semantic-blue", "semantic-green"],
+    size: ["M", "L"],
   },
   {
     id: 82,
@@ -1339,8 +1339,8 @@ export const allProducts = [
       "This trendy bucket bag features a spacious interior and a drawstring closure. Made from premium leather, it's perfect for carrying your essentials in style.",
     category: "handbag",
     img: handbag_6,
-    colors: ["semantic-yellow", "semantic-green"],
-    sizes: ["M"],
+    color: ["semantic-yellow", "semantic-green"],
+    size: ["M"],
   },
   {
     id: 83,
@@ -1351,8 +1351,8 @@ export const allProducts = [
       "This versatile messenger bag features an adjustable strap for easy crossbody carrying. Made from durable canvas, it is perfect for work or casual outings.",
     category: "handbag",
     img: handbag_7,
-    colors: ["primary-blue", "semantic-yellow"],
-    sizes: ["M", "L"],
+    color: ["primary-blue", "semantic-yellow"],
+    size: ["M", "L"],
   },
   {
     id: 84,
@@ -1363,8 +1363,8 @@ export const allProducts = [
       "This stylish wallet on a chain combines practicality with fashion. Perfect for when you just need the essentials, it features card slots and a detachable chain for hands-free convenience.",
     category: "handbag",
     img: handbag_8,
-    colors: ["semantic-blue", "semantic-green"],
-    sizes: ["S"],
+    color: ["semantic-blue", "semantic-green"],
+    size: ["S"],
   },
   {
     id: 85,
@@ -1375,8 +1375,8 @@ export const allProducts = [
       "This spacious duffel bag is perfect for travel. With plenty of room for clothes and accessories, it features a durable canvas exterior and leather straps for added style.",
     category: "handbag",
     img: handbag_9,
-    colors: ["semantic-green", "primary-blue"],
-    sizes: ["L"],
+    color: ["semantic-green", "primary-blue"],
+    size: ["L"],
   },
   {
     id: 86,
@@ -1387,8 +1387,8 @@ export const allProducts = [
       "This compact baguette bag is perfect for a night out. Made from luxurious leather, it offers just enough space for your essentials while adding a chic touch to any outfit.",
     category: "handbag",
     img: handbag_10,
-    colors: ["semantic-yellow", "semantic-green"],
-    sizes: ["S", "M"],
+    color: ["semantic-yellow", "semantic-green"],
+    size: ["S", "M"],
   },
   {
     id: 87,
@@ -1399,8 +1399,8 @@ export const allProducts = [
       "This travel bag is designed for the frequent traveler. With multiple compartments and durable construction, it ensures that your belongings stay organized and secure during your trips.",
     category: "handbag",
     img: handbag_11,
-    colors: ["semantic-blue", "primary-blue"],
-    sizes: ["L"],
+    color: ["semantic-blue", "primary-blue"],
+    size: ["L"],
   },
   {
     id: 88,
@@ -1411,7 +1411,7 @@ export const allProducts = [
       "This simple yet stylish tote bag is perfect for everyday use. With its spacious interior and sturdy construction, it can carry everything from groceries to books with ease.",
     category: "handbag",
     img: handbag_12,
-    colors: ["semantic-green", "semantic-yellow"],
-    sizes: ["M"],
+    color: ["semantic-green", "semantic-yellow"],
+    size: ["M"],
   },
 ];
