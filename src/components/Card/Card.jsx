@@ -1,5 +1,4 @@
 import "./Card.scss";
-import { hero_img } from "../../constants";
 import { Button } from "../Button/Button";
 import { useNavigate } from "react-router-dom";
 

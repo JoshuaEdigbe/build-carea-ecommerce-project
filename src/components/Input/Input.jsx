@@ -1,9 +1,12 @@
-import React from 'react'
+import "./Input.scss";
 
-function Input() {
+const Input = ({ label, type }) => {
   return (
-    <div>Input</div>
-  )
-}
+    <div className="input_wrapper">
+      <label className="label">{label}</label>
+      <input type={type} />
+    </div>
+  );
+};
 
-export default Input
+export default Input;

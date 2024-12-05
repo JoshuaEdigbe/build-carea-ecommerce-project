@@ -95,6 +95,9 @@ import handbag_10 from "../assets/Products/handbagProducts/handbag_10.webp";
 import handbag_11 from "../assets/Products/handbagProducts/handbag_11.jpeg";
 import handbag_12 from "../assets/Products/handbagProducts/handbag_12.jpeg";
 
+import success from "../assets/Payment/success.png";
+import error from "../assets/Payment/error.png";
+
 import f_logo from "../assets/Footer/f_logo.png";
 import github from "../assets/Footer/github.png";
 import youtube from "../assets/Footer/utube.png";
@@ -102,6 +105,8 @@ import instagram from "../assets/Footer/instagramm.png";
 import master from "../assets/Footer/masterCard.png";
 import amc from "../assets/Footer/amc.png";
 import visa from "../assets/Footer/visa.png";
+
+import googleauth from "../assets/icons/Google.png";
 
 export {
   logo,
@@ -123,6 +128,9 @@ export {
   master,
   amc,
   visa,
+  success,
+  error,
+  googleauth,
 };
 
 export const menus = [
