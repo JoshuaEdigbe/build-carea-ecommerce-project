@@ -1,0 +1,20 @@
+.search_wrapper {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 264px;
+  padding: 0 4px;
+  background-color: transparent;
+  border: 1px solid #e6e7e8;
+  border-radius: 10px;
+  gap: 10px;
+}
+.search_wrapper input {
+  padding: 4px 5px;
+  border: none;
+  outline: none;
+}
+.search_wrapper input:focus {
+  outline: 10px;
+  outline: 1px solid plum;
+}/*# sourceMappingURL=Search.css.map */

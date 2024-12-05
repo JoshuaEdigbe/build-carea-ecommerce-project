@@ -18,6 +18,10 @@ import sweatshirt from "../assets/ProductList/sweatshirt.png";
 import cozyblack from "../assets/ProductList/cozyblack.png";
 import rawblack from "../assets/ProductList/rawblack.png";
 import mockup from "../assets/ProductList/mockup.png";
+import chevronRight from "../assets/checkout/vector (2).png";
+import productItem1 from "../assets/checkout/Image.png";
+import productItem2 from "../assets/checkout/image1.png";
+import productItem3 from "../assets/checkout/image2.png";
 
 import f_logo from "../assets/Footer/f_logo.png";
 import github from "../assets/Footer/github.png";
@@ -40,6 +44,10 @@ export {
   feature_2,
   feature_3,
   cta_img,
+  chevronRight,
+  productItem1,
+  productItem2,
+  productItem3,
   f_logo,
   github,
   youtube,

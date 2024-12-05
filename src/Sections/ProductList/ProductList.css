@@ -1,0 +1,36 @@
+.productList {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.productList .productList_btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.productList .productList_btn .btnClick {
+  background: transparent;
+  padding: 5px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.productList .productList_btn .btnClick.active {
+  border: 1px solid gainsboro;
+}
+.productList .productList_items {
+  display: grid;
+  grid-template-columns: auto;
+}
+@media (min-width: 760px) {
+  .productList .productList {
+    margin: 170px 0;
+  }
+  .productList .productList_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=ProductList.css.map */

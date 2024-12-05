@@ -1,0 +1,50 @@
+.cta_bg {
+  background: #f6f6f6;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.cta_bg .cta_footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+  gap: 20px;
+}
+.cta_bg .cta_footer_wrapper .cta_info h2 {
+  color: #0E1422;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.cta_bg .cta_footer_wrapper .cta_info p {
+  color: #5C5F6A;
+  font-size: 14px;
+}
+.cta_bg .cta_footer_wrapper .cta_input {
+  background-color: transparent;
+  display: flex;
+  gap: 2px;
+}
+.cta_bg .cta_footer_wrapper .cta_input input {
+  padding: 8px;
+  outline: none;
+  width: 320px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.cta_bg .cta_footer_wrapper .cta_input .sub_btn {
+  background: #000;
+  color: white;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 760px) {
+  .cta_bg .cta_footer_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=CTA.css.map */

@@ -1,0 +1,59 @@
+.cta_bg {
+  background-color: #f6f6f6;
+  height: 50vh;
+}
+.cta_bg .cta_wrapper {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.cta_bg .cta_wrapper .cta_message {
+  text-align: center;
+}
+.cta_bg .cta_wrapper .cta_message h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.cta_bg .cta_wrapper .cta_message p {
+  font-size: 1.2rem;
+  color: #5c5f6a;
+  margin: 1.5rem 0;
+}
+.cta_bg .cta_wrapper .cta_message .cta_btn {
+  background: #000;
+  color: white;
+  width: 180px;
+  padding: 12px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cta_bg .cta_wrapper .cta_img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .cta_bg .cta_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .cta_bg .cta_wrapper .cta_message {
+    text-align: start;
+  }
+  .cta_bg .cta_wrapper .cta_message h1 {
+    font-size: 2rem;
+  }
+  .cta_bg .cta_wrapper .cta_message p {
+    font-size: 14px;
+  }
+  .cta_bg .cta_wrapper .cta_img {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .cta_bg .cta_wrapper .cta_img img {
+    width: 45%;
+  }
+}/*# sourceMappingURL=CTACategory.css.map */

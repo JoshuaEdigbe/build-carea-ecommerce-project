@@ -1,0 +1,58 @@
+.hero_bg {
+  background-color: #f6f6f6;
+}
+
+.hero_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero_wrapper .hero_message {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.hero_wrapper .hero_message h1 {
+  font: 32px 100;
+  padding-bottom: 1.5rem;
+}
+.hero_wrapper .hero_message p {
+  font: 14px 400;
+  padding-bottom: 3rem;
+}
+.hero_wrapper .hero_message .hero_btn {
+  background: #000;
+  color: white;
+  width: 180px;
+  padding: 12px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hero_wrapper .hero_img {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.hero_wrapper .hero_img .ellipse {
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  background: #e9e9eb;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+.hero_wrapper .hero_img img {
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .hero_wrapper {
+    grid-template-columns: 1fr;
+    place-self: center;
+    gap: 2rem;
+    padding-top: 40px;
+  }
+  .hero_wrapper .hero_message {
+    align-items: center;
+  }
+}/*# sourceMappingURL=hero.css.map */

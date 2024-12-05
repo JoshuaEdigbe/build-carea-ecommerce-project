@@ -1,0 +1,96 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.nav {
+  background: white;
+}
+.nav .nav_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+}
+.nav .nav_items .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav .nav_items .logo img {
+  width: 40px;
+  height: 40px;
+}
+.nav .nav_items .logo p {
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+.nav .nav_items .nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav .nav_items .nav_menu .menu a {
+  list-style: none;
+  color: #5c5f6a;
+  font-size: 14px;
+}
+.nav .nav_items .nav_menu .menu a .category_icon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.nav .nav_items .user_interact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.nav .nav_items .user_interact .search_modal {
+  cursor: pointer;
+}
+.nav .nav_items .user_interact .bars_mobile {
+  cursor: pointer;
+  z-index: 50;
+}
+.nav .nav_items .user_interact img {
+  cursor: pointer;
+}
+
+.nav_items {
+  position: relative;
+}
+.nav_items .Overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.67);
+  z-index: 40;
+}
+.nav_items .nav_menu_mobile {
+  animation: slideIn 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+  background: #000;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 80px;
+  gap: 40px;
+  z-index: 50;
+}
+.nav_items .nav_menu_mobile .menu a {
+  color: white;
+}/*# sourceMappingURL=Nav.css.map */
