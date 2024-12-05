@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Button } from "../../components/Button/Button";
-import Card from "../../components/Card/Card";
-import Format from "../../components/Format/Format";
-import { ProductArr } from "../../constants";
+import { Button } from "../../../components/Button/Button";
+import Format from "../../../components/Format/Format";
+import Card from "../../../components/Card/Card";
+import { ProductArr } from "../../../constants";
+import { LatestArr } from "../../../constants";
 import "./ProductList.scss";
-import { LatestArr } from "../../constants";
 
 const ProductList = () => {
   const [isFeatureMenu, setIsFeatureMenu] = useState(true);

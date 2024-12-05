@@ -1,8 +1,8 @@
-import "./CTA.scss";
-import Format from "../../components/Format/Format";
-import { Button } from "../../components/Button/Button";
+import "./styles.scss";
+import Format from "../../../components/Format/Format";
+import { Button } from "../../../components/Button/Button";
 
-const CTA = () => {
+const Cta = () => {
   const handleSubscription = () => {
     console.log("subscribed!");
   };
@@ -33,4 +33,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default Cta;

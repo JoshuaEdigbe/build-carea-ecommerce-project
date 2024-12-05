@@ -1,7 +1,7 @@
 import "./BestSelling.scss";
-import Format from "../../components/Format/Format";
-import { bestSelling } from "../../constants";
-import Card from "../../components/Card/Card";
+import Format from "../../../components/Format/Format";
+import { bestSelling } from "../../../constants";
+import Card from "../../../components/Card/Card";
 
 const BestSelling = () => {
   return (

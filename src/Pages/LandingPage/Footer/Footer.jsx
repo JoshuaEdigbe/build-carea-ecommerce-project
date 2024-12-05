@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import Format from "../../components/Format/Format";
+import Format from "../../../components/Format/Format";
 import {
   amc,
   f_logo,
@@ -8,7 +8,7 @@ import {
   master,
   visa,
   youtube,
-} from "../../constants";
+} from "../../../constants";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -1,23 +1,23 @@
 import "./Nav.scss";
-import Format from "../../components/Format/Format";
-import { logo, Search, Shop, User } from "../../constants";
+import Format from "../../../components/Format/Format";
+import { logo, Shop, User, menus } from "../../../constants";
 import { Link, NavLink } from "react-router-dom";
-import { menus } from "../../constants";
 import { useEffect, useState } from "react";
 import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
-import SearchModal from "../../components/Search/SearchModal";
-import Login from "../../Pages/Auth/Login/Login";
+import SearchModal from "../../../components/Search/SearchModal";
 
-const Nav = ({ toggleSearch }) => {
+const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
-  const [LoginModal, setLoginModal] = useState(false);
+  // const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  // const [LoginModal, setLoginModal] = useState(false);
 
-  const handleLogin = () => {
-    setLoginModal(true);
+  // const handleLogin = () => {
+  //   setLoginModal(true);
+  // };
+  const toggleSearch = () => {
+    console.log("search clicked");
   };
-
   const handleScreenResize = () => {
     setIsMobile(window.innerWidth <= 768);
     if (window.innerWidth > 768) {

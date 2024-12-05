@@ -1,6 +1,6 @@
 import "./Feature.scss";
-import Format from "../../components/Format/Format";
-import { feature_1, feature_2, feature_3 } from "../../constants";
+import Format from "../../../components/Format/Format";
+import { feature_1, feature_2, feature_3 } from "../../../constants/index";
 
 const Feature = () => {
   return (

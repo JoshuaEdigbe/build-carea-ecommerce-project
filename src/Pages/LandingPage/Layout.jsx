@@ -1,10 +1,9 @@
 import Hero from "./hero/Hero";
 import Feature from "./Feature/Feature";
 import BestSelling from "./BestSelling/BestSelling";
-import Format from "../components/Format/Format";
-import CTACategory from "./CTACategory/CTACategory";
-import CTA from "./CTA/CTA";
+import LatestItems from "./LatestItems";
 import ProductList from "./ProductList/ProductList";
+import Cta from "./Cta/Cta";
 
 const Layout = () => {
   return (
@@ -12,9 +11,9 @@ const Layout = () => {
       <Hero />
       <Feature />
       <BestSelling />
-      <CTACategory />
+      <LatestItems />
       <ProductList />
-      <CTA />
+      <Cta />
     </>
   );
 };

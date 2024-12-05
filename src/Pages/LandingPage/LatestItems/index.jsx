@@ -1,16 +1,16 @@
-import { Button } from "../../components/Button/Button";
-import Format from "../../components/Format/Format";
-import { cta_img } from "../../constants";
-import "./CTACategory.scss";
+import "./styles.scss";
+import { Button } from "../../../components/Button/Button";
+import Format from "../../../components/Format/Format";
+import { cta_img } from "../../../constants";
 import { useNavigate } from "react-router-dom";
 
-const CTACategory = () => {
+const LatestItems = () => {
   const navigation = useNavigate();
   const productList = () => {
     navigation("/about");
   };
   return (
-    <div className="cta_bg">
+    <div className="latest_items_bg">
       <Format>
         <div className="cta_wrapper">
           <div className="cta_message">
@@ -35,4 +35,4 @@ const CTACategory = () => {
   );
 };
 
-export default CTACategory;
+export default LatestItems;
