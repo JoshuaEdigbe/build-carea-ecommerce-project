@@ -9,6 +9,7 @@ import Ads from "./Pages/LandingPage/Ads/Ads";
 import Footer from "./Pages/LandingPage/Footer/Footer";
 import Layout from "./Pages/LandingPage/Layout";
 import Nav from "./Pages/LandingPage/Navigation/Nav";
+import ProductDetail from "./components/ProductDetail"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/categories" element={<Categories />} />
+          <Route path="/product" element={<ProductDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/sign-up" element={<Register />} />

@@ -1,0 +1,62 @@
+#categories-wrapper {
+  width: 216px;
+  height: 250px;
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h2 {
+      color: #0e1422;
+      font-size: 14px;
+    }
+
+    .category {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 4px;
+      width: 200px;
+      height: fit-content;
+      border-bottom: 1px solid #e9e9eb;
+      font-size: 12px;
+      color: #474b57;
+
+      
+      .radio-button {
+        display: none; 
+      }
+      
+      .checkmark {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-color: inherit;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        margin-right: 8px;
+        position: relative;
+        transition: background-color 0.3s, border-color 0.3s;
+      }
+      
+      .radio-button:checked + .checkmark {
+        background-color: #fff;
+        border-color: #007bff;
+      }
+      
+      .radio-button:checked + .checkmark::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #007bff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+    }
+  }
+}

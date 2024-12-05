@@ -1,0 +1,14 @@
+#aside-bar {
+  width: 248px;
+  height: 550px;
+  border: 1px solid #e6e7e8;
+  border-radius: 6px;
+  padding: 14px 12px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  left: 140px;
+  z-index: 999;
+  background: white;
+}
