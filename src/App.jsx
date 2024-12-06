@@ -9,7 +9,7 @@ import Ads from "./Pages/LandingPage/Ads/Ads";
 import Footer from "./Pages/LandingPage/Footer/Footer";
 import Layout from "./Pages/LandingPage/Layout";
 import Nav from "./Pages/LandingPage/Navigation/Nav";
-import ProductDetail from "./components/ProductDetail"
+import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
