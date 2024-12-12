@@ -23,8 +23,8 @@ import "./Size.scss";
 import { GlobalContext } from "../../../../context/GlobalContext";
 
 function Size() {
-  const { products, setProducts } = useContext(GlobalContext);
-  const [selectedSize, setSelectedSize] = useState(null);
+  const { products, setProducts, selectedSize, setSelectedSize } = useContext(GlobalContext);
+  // const [selectedSize, setSelectedSize] = useState(null);
 
   const handleSize = () => {
     setProducts(products.filter((prod) => prod.size && prod.size.includes(selectedSize)));
