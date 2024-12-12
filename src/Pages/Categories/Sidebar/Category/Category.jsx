@@ -5,8 +5,8 @@ import { useActionData } from "react-router-dom";
 import { allProducts } from "../../../../constants";
 
 function Category() {
-  const [filter, setFilter] = useState("all");
-  const { setProducts } = useContext(GlobalContext);
+  // const [filter, setFilter] = useState("all");
+  const { setProducts, filter, setFilter } = useContext(GlobalContext);
   
   const handleChange = (e) => {
     setFilter(e.target.value);

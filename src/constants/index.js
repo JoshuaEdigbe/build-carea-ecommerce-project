@@ -278,11 +278,13 @@ export const allProducts = [
       "semantic-yellow",
       "primary-blue",
     ],
+    cart: "ADD TO CART",
   },
   {
     id: 2,
     name: "Sleak and Cozy Black",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$50.00",
     img: cozyblack,
     category: "clothing",
@@ -298,6 +300,7 @@ export const allProducts = [
     id: 3,
     name: "Raw Black Tees",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$90.00",
     img: rawblack,
     category: "clothing",
@@ -313,6 +316,7 @@ export const allProducts = [
     id: 4,
     name: "MOCKUP Black",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$40.00",
     img: mockup,
     category: "clothing",
@@ -328,6 +332,7 @@ export const allProducts = [
     id: 5,
     name: "Classic Monochrome Tees",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$20.00",
     img: best_1,
     category: "clothing",
@@ -343,6 +348,7 @@ export const allProducts = [
     id: 6,
     name: "Monochrome Wardrobe",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$50.00",
     img: best_2,
     category: "clothing",
@@ -358,6 +364,7 @@ export const allProducts = [
     id: 7,
     name: "Essential Neutrals",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$90.00",
     img: best_3,
     category: "clothing",
@@ -373,6 +380,7 @@ export const allProducts = [
     id: 8,
     name: "UTRAANET Black",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$40.00",
     img: best_4,
     category: "clothing",
@@ -388,6 +396,7 @@ export const allProducts = [
     id: 9,
     name: "Classic Monochrome Tees",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$20.00",
     img: best_1,
     category: "clothing",
@@ -403,6 +412,7 @@ export const allProducts = [
     id: 10,
     name: "Monochrome Wardrobe",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$50.00",
     img: best_2,
     category: "clothing",
@@ -418,6 +428,7 @@ export const allProducts = [
     id: 11,
     name: "Essential Neutrals",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$90.00",
     img: best_3,
     category: "clothing",
@@ -433,6 +444,7 @@ export const allProducts = [
     id: 12,
     name: "UTRAANET Black",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$40.00",
     img: best_4,
     category: "clothing",
@@ -448,6 +460,7 @@ export const allProducts = [
     id: 13,
     name: "Mystic Rose",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$49.99",
     category: "perfume",
     description:
@@ -463,6 +476,7 @@ export const allProducts = [
     id: 14,
     name: "Ocean Breeze",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$39.99",
     category: "perfume",
     description:
@@ -478,6 +492,7 @@ export const allProducts = [
     id: 15,
     name: "Velvet Oud",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$59.99",
     category: "perfume",
     description:
@@ -493,6 +508,7 @@ export const allProducts = [
     id: 16,
     name: "Citrus Splash",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$29.99",
     category: "perfume",
     description:
@@ -508,6 +524,7 @@ export const allProducts = [
     id: 17,
     name: "Amber Nights",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$69.99",
     category: "perfume",
     description:
@@ -523,6 +540,7 @@ export const allProducts = [
     id: 18,
     name: "Lavender Dreams",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$34.99",
     category: "perfume",
     description:
@@ -538,6 +556,7 @@ export const allProducts = [
     id: 19,
     name: "Golden Sunset",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$54.99",
     category: "perfume",
     description:
@@ -553,6 +572,7 @@ export const allProducts = [
     id: 20,
     name: "Tropical Paradise",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$44.99",
     category: "perfume",
     description:
@@ -568,6 +588,7 @@ export const allProducts = [
     id: 21,
     name: "Eternal Elegance",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$79.99",
     category: "perfume",
     description:
@@ -583,6 +604,7 @@ export const allProducts = [
     id: 22,
     name: "Wild Orchid",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$49.99",
     category: "perfume",
     description:
@@ -598,6 +620,7 @@ export const allProducts = [
     id: 23,
     name: "Desert Bloom",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$59.99",
     category: "perfume",
     description:
@@ -613,6 +636,7 @@ export const allProducts = [
     id: 24,
     name: "Midnight Noir",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$89.99",
     category: "perfume",
     description:
@@ -628,6 +652,7 @@ export const allProducts = [
     id: 25,
     name: "Spring Fresh",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$32.99",
     category: "perfume",
     description:
@@ -643,6 +668,7 @@ export const allProducts = [
     id: 26,
     name: "Spicy Amber",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$69.99",
     category: "perfume",
     description:
@@ -658,6 +684,7 @@ export const allProducts = [
     id: 27,
     name: "Blush Peony",
     availability: "In Stock",
+    cart: "ADD TO CART",
     price: "$39.99",
     category: "perfume",
     description:
@@ -674,6 +701,7 @@ export const allProducts = [
     name: "Stainless Steel Thermos",
     price: "$25.97",
     availability: "In Stock",
+    cart: "ADD TO CART",
     details:
       "A durable stainless steel thermos designed for everyday use. Perfect for keeping beverages hot for up to 12 hours or cold for up to 24 hours. Its sleek design and sturdy construction make it an ideal companion for work, travel, or outdoor adventures.",
     category: "thermos",
@@ -690,6 +718,7 @@ export const allProducts = [
     name: "Travel Thermos",
     price: "$20.00",
     availability: "In Stock",
+    cart: "ADD TO CART",
     details:
       "Compact and lightweight, this travel thermos is your perfect companion for trips and commutes. It features a secure, leak-proof lid and double-wall insulation to ensure your drink stays at the perfect temperature for hours.",
     category: "thermos",
@@ -706,6 +735,7 @@ export const allProducts = [
     name: "Insulated Coffee Mug",
     price: "$18.49",
     availability: "In Stock",
+    cart: "ADD TO CART",
     details:
       "This insulated coffee mug combines style and functionality, keeping your coffee hot and flavorful throughout the day. Its ergonomic handle and spill-proof lid make it ideal for office use or morning commutes.",
     category: "thermos",
