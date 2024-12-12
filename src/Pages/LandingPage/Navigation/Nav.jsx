@@ -9,15 +9,12 @@ import SearchModal from "../../../components/Search/SearchModal";
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
-  // const [LoginModal, setLoginModal] = useState(false);
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
 
-  // const handleLogin = () => {
-  //   setLoginModal(true);
-  // };
-  const toggleSearch = () => {
-    console.log("search clicked");
+  const mobileSearchModal = () => {
+    setIsSearchModalOpen((prev) => !prev);
   };
+
   const handleScreenResize = () => {
     setIsMobile(window.innerWidth <= 768);
     if (window.innerWidth > 768) {
@@ -36,7 +33,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="nav">
+    <div id="nav">
       <Format height="height">
         {/* Mobile Nav */}
         {isMobile ? (
@@ -72,7 +69,7 @@ const Nav = () => {
               <img src={Shop} alt="shopping_cart" />
               <img src={User} alt="User_icon" />
               <LuSearch
-                onClick={toggleSearch}
+                onClick={mobileSearchModal}
                 size={25}
                 className="search_modal"
               />
@@ -90,7 +87,9 @@ const Nav = () => {
                 />
               )}
             </div>
-            {/* {isSearchModalOpen && <SearchModal />} */}
+            <div className="mobile_search_modal">
+              {isSearchModalOpen && <SearchModal />}
+            </div>
           </div>
         ) : (
           // Desktop
