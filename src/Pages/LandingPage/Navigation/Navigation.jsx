@@ -1,4 +1,4 @@
-import "./Nav.scss";
+import "./Navigation.scss";
 import Format from "../../../components/Format/Format";
 import { useContext } from "react";
 import { logo, Shop, User, menus } from "../../../constants";
@@ -8,7 +8,7 @@ import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
 import SearchModal from "../../../components/Search/SearchModal";
 import { GlobalContext } from "../../../context/GlobalContext";
 
-const Nav = () => {
+const Navigation = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
@@ -150,4 +150,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navigation;
