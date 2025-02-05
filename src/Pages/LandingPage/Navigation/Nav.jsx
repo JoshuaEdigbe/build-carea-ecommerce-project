@@ -1,15 +1,18 @@
 import "./Nav.scss";
 import Format from "../../../components/Format/Format";
+import { useContext } from "react";
 import { logo, Shop, User, menus } from "../../../constants";
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
 import SearchModal from "../../../components/Search/SearchModal";
+import { GlobalContext } from "../../../context/GlobalContext";
 
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const { cart } = useContext(GlobalContext);
 
   const mobileSearchModal = () => {
     setIsSearchModalOpen((prev) => !prev);
@@ -66,7 +69,16 @@ const Nav = () => {
               </>
             )}
             <div className="user_interact">
-              <img src={Shop} alt="shopping_cart" />
+              <div className="shopping-cart-wrapper">
+                <div className="cart_icon">
+                  <Link to="/cart" className="cart-icon">
+                    <img src={Shop} alt="shopping_cart" />
+                    {cart.length > 0 && (
+                      <span className="cart-count">{cart.length}</span>
+                    )}
+                  </Link>
+                </div>
+              </div>
               <img src={User} alt="User_icon" />
               <LuSearch
                 onClick={mobileSearchModal}
@@ -96,7 +108,7 @@ const Nav = () => {
           <div className="nav_items">
             <Link to="/" className="logo">
               <img src={logo} alt="logo_ecommerce" />
-              <p>Ecommerce</p>
+              <p>Ecommerceee</p>
             </Link>
             <div className="nav_menu">
               {menus.map((menu) => {
@@ -118,7 +130,15 @@ const Nav = () => {
             </div>
             <div className="user_interact">
               <SearchModal />
-              <img src={Shop} alt="shopping_cart" onClick="" />
+              <div className="cart_icon">
+                <Link to="/cart" className="cart-icon">
+                  <img src={Shop} alt="shopping_cart" />
+                  {cart.length > 0 && (
+                    <span className="cart-count">{cart.length}</span>
+                  )}
+                </Link>
+              </div>
+
               <Link to="/login">
                 <img src={User} alt="User_icon" />
               </Link>

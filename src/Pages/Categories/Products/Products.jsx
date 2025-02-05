@@ -1,80 +1,3 @@
-// import React, { useContext, useState } from "react";
-// import "./Products.scss";
-// import { IoCloseOutline } from "react-icons/io5";
-// import { IoIosArrowDown } from "react-icons/io";
-// import Sidebar from "../Sidebar/Sidebar";
-// import Card from "../../../components/Card/Card";
-// import { allProducts } from "../../../constants";
-// import { Link } from "react-router-dom";
-// import { GlobalContext } from "../../../context/GlobalContext";
-
-// function Products() {
-//   const { products } = useContext(GlobalContext);
-//   const [currentPage, setCurrentPage] = useState(0);
-//   const itemsPerPage = 9;
-
-//   const handleNextPage = () => {
-//     if ((currentPage + 1) * itemsPerPage < earningHistoryState.length) {
-//       setCurrentPage(currentPage + 1);
-//     }
-//   };
-
-//   const handlePreviousPage = () => {
-//     if (currentPage > 0) {
-//       setCurrentPage(currentPage - 1);
-//     }
-//   };
-
-//   return (
-//     <div className="product-wrapper">
-//       <Sidebar />
-//       <div className="card-container">
-//         <div className="filtered-product">
-//           <div className="filter-header">
-//             <h3>Applied Filters:</h3>
-//             <ul>
-//               <li>
-//                 Tees <IoCloseOutline />
-//               </li>
-//               <li>
-//                 Sneakers <IoCloseOutline />
-//               </li>
-//             </ul>
-//           </div>
-//           <div className="sort-wrapper">
-//             <p>Showing 1-9 Of 36 Results</p>
-//             <div className="sort">
-//               SORT BY <IoIosArrowDown />
-//             </div>
-//           </div>
-//         </div>
-//         {/* <MyCard /> */}
-//         <div className="products-listing">
-//           {products
-//             .sort(() => Math.random() - 0.5)
-//             .slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
-//             .map((product, index) => (
-//               <Link to="" key={index}>
-//                 <Card
-//                   img={product.img}
-//                   availability={product.availability}
-//                   name={product.name}
-//                   price={product.price}
-//                 />
-//               </Link>
-//             ))}
-//         </div>
-//         <div>
-//           <button>&lt;</button>
-//           <button>&gt;</button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Products;
-
 import React, { useContext, useState } from "react";
 import "./Products.scss";
 import { IoCloseOutline } from "react-icons/io5";
@@ -128,6 +51,11 @@ function Products() {
     navigate(`/product/${id}`);
   };
 
+  const randomizedProducts = products
+    // .sort(() => Math.random() - 0.5)
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
+
   return (
     <div>
       <Format>
@@ -140,12 +68,6 @@ function Products() {
             <div className="filter-header">
               <h3>Applied Filters:</h3>
               <ul>
-                {/* <li>
-                Tees <IoCloseOutline />
-              </li>
-              <li>
-                Perfume <IoCloseOutline />
-              </li> */}
                 {filter != "all" && (
                   <li>
                     {filter}{" "}
@@ -183,35 +105,16 @@ function Products() {
             {!products || products == [] ? (
               <p>No product in this category.</p>
             ) : (
-              products
-                // .sort(() => Math.random() - 0.5)
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .slice(
-                  currentPage * itemsPerPage,
-                  (currentPage + 1) * itemsPerPage
-                )
-                .map((product, index) => (
-                  <Link to={`/product/${product.id}`} key={index}>
-                    {" "}
-                    <Card
-                      img={product.img}
-                      availability={product.availability}
-                      name={product.name}
-                      price={product.price}
-                    />
-                  </Link>
-                  // <div
-                  //   key={index}
-                  //   className="dynamic-link"
-                  //   >
-                  //   <Card
-                  //     img={product.img}
-                  //     availability={product.availability}
-                  //     name={product.name}
-                  //     price={product.price}
-                  //   />
-                  // </div>
-                ))
+              randomizedProducts.map((product, index) => (
+                <Card
+                  key={index}
+                  img={product.img}
+                  availability={product.availability}
+                  name={product.name}
+                  price={product.price}
+                  id={product.id}
+                />
+              ))
             )}
           </div>
           <div className="pagination">

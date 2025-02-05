@@ -10,6 +10,7 @@ import Footer from "./Pages/LandingPage/Footer/Footer";
 import Layout from "./Pages/LandingPage/Layout";
 import Nav from "./Pages/LandingPage/Navigation/Nav";
 import ProductDetail from "./Pages/ProductDetail/ProductDetail";
+import Cart from "./components/Cart/Cart";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/sign-up" element={<Register />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </Router>
