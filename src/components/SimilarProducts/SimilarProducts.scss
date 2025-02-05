@@ -1,0 +1,25 @@
+#similar-products {
+    padding: 50px 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .similar-products-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+            color: #0e1422;
+        }
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            color: #878a92;
+        }
+    }
+    .similar-products-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}

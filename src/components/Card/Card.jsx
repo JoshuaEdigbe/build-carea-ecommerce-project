@@ -3,17 +3,21 @@ import { Button } from "../Button/Button";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-const Card = ({ img, name, availability, price }) => {
+const Card = ({ img, name, availability, price, id }) => {
   const navigate = useNavigate();
   const handleAvailability = () => {
     navigate("/categories");
   };
+  const handleProductNav = () => {
+    navigate(`/product/${id}`);
+    console.log("Clicked!");
+  };
   return (
     <>
       <div className="card">
-        <div className="img_wrapper">
+        <div onClick={handleProductNav} className="img_wrapper">
           <Link to={`/product/${img.id}`}>
-            <img src={img} alt="" />
+            <img onClick={window.scrollTo(0, 0)} src={img} alt="" />
           </Link>
         </div>
         <div className="card_details">
