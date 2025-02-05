@@ -1,4 +1,4 @@
-import "./Nav.scss";
+import "./Navigation.scss";
 import Format from "../../../components/Format/Format";
 import { logo, Shop, User, menus } from "../../../constants";
 import { Link, NavLink } from "react-router-dom";
@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { LuAlignRight, LuSearch, LuX } from "react-icons/lu";
 import SearchModal from "../../../components/Search/SearchModal";
 
-const Nav = () => {
+const Navigation = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
@@ -130,4 +130,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navigation;

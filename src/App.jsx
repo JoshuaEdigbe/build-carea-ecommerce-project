@@ -8,7 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import Ads from "./Pages/LandingPage/Ads/Ads";
 import Footer from "./Pages/LandingPage/Footer/Footer";
 import Layout from "./Pages/LandingPage/Layout";
-import Nav from "./Pages/LandingPage/Navigation/Nav";
+import Navigation from "./Pages/LandingPage/Navigation/Navigation";
 import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -17,8 +17,8 @@ function App() {
   return (
     <div>
       <Router>
-        <Ads />
-        <Nav />
+        <Ads />                
+        <Navigation />
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="/about" element={<About />} />
