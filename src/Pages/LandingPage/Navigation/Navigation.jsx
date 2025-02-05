@@ -1,6 +1,8 @@
 import "./Navigation.scss";
 import Format from "../../../components/Format/Format";
+
 import { useContext } from "react";
+
 import { logo, Shop, User, menus } from "../../../constants";
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -13,6 +15,7 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const { cart } = useContext(GlobalContext);
+
 
   const mobileSearchModal = () => {
     setIsSearchModalOpen((prev) => !prev);
@@ -108,7 +111,7 @@ const Navigation = () => {
           <div className="nav_items">
             <Link to="/" className="logo">
               <img src={logo} alt="logo_ecommerce" />
-              <p>Ecommerceee</p>
+              <p>Ecommerce</p>
             </Link>
             <div className="nav_menu">
               {menus.map((menu) => {
@@ -129,7 +132,7 @@ const Navigation = () => {
               })}
             </div>
             <div className="user_interact">
-              <SearchModal />
+
               <div className="cart_icon">
                 <Link to="/cart" className="cart-icon">
                   <img src={Shop} alt="shopping_cart" />
@@ -138,6 +141,7 @@ const Navigation = () => {
                   )}
                 </Link>
               </div>
+
 
               <Link to="/login">
                 <img src={User} alt="User_icon" />
